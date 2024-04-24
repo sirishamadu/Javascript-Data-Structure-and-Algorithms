@@ -1,6 +1,6 @@
 //Palindrome Check: Write a function that checks whether a given string is a palindrome or not.
 let str = 'madam';
-let isPalindrome = function(s){
+let isPalindrome = (s) => {
     let j = s.length-1
     for(let i=0; i<s.length/2; i++){
         if(s[j] !== s[i]){
@@ -10,10 +10,10 @@ let isPalindrome = function(s){
         
         else{
             j--;
-        }
-        console.log(s + ' is palindrome');
-        return true;
+        }        
     }
+    console.log(s + ' is palindrome');
+    return true;
 }
 isPalindrome(str);
 
